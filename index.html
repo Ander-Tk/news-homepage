@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" alt="Logotipo">
+      </a>
+
+      <!-- toggle mobile nav -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false">
+        <img src="assets/icon-menu.svg">
+      </button>
+
+      <!-- navbar links -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" data-bs-backdrop="static" id="main-nav">
+        <ul class="navbar-nav justify-content-end">
+          <div class="offcanvas-header justify-content-end">
+            <button type="button" class="border-0 bg-white" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="assets/icon-menu-close.svg" alt="">
+            </button>
+          </div>
+            <div class="offcanvas-body ps-3">
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">New</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Popular</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Trending</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Categories</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <main class="container-md">
+    <!--Hero-->
+    <section>
+      <div class="row row-cols-md-3 mt-3">
+        <div class="col-12 col-md-12 col-lg-8">
+          <div class="row">
+            <div class="col-12 col-md-12">
+              <img class="d-none d-sm-block img-fluid img-thumbnail border-0" src="assets/image-web-3-desktop.jpg" alt="Web 3.0">
+              <img class="d-block d-sm-none img-fluid img-thumbnail border-0" src="assets/image-web-3-mobile.jpg" alt="Web 3.0">
+            </div>
+            <div class="col-12 col-md-6 mt-3"><h1 class="display-5">The Bright Future of Web 3.0?</h1></div>
+            <div class="col-12 col-md-6 mt-3">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+                
+              <button class="btn mt-4"> READ MORE </button>
+            </div>
+          </div>
+        </div>
+        <!--News Section-->
+        <div class="col-12 col-md-12 col-lg-4 p-3 pt-5 mt-3 mt-lg-1 news-col">
+          <h3>New</h3>
+          <div class="pb-2 pt-2">
+            <h5>Hydrogen VS Electric Cars</h5>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr>
+          <div class="pb-2 pt-2">
+            <h5>The Downsides of AI Artistry</h5>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <hr>
+          <div class="pb-2 pt-2">
+            <h5>Is VC Funding Drying Up?</h5>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Cards-->
+    <div class="row mt-5">
+      <div class="col-12 col-lg-4 mb-3 card border-0">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="assets/image-retro-pcs.jpg" class="img-fluid" alt="Retro PCs">
+          </div>
+          <div class="col-8">
+              <div class="card-body">
+              <span class="card-number">01</span>
+              <h6 class="card-title">Reviving Retro PCs</h6>
+              <p class="card-text">What happens when old PCs are given modern upgrades?</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 mb-3 card border-0">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="assets/image-top-laptops.jpg" class="img-fluid" alt="Top Laptops">
+          </div> 
+          <div class="col-8">
+              <div class="card-body">
+              <span class="card-number">02</span>
+              <h6 class="card-title">Top 10 Laptops of 2022</h6>
+              <p class="card-text">Our best picks for various needs and budgets</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 mb-3 card border-0">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="assets/image-gaming-growth.jpg" class="img-fluid" alt="Gaming Growth">
+          </div>
+          <div class="col-8">
+              <div class="card-body">
+              <span class="card-number">03</span>
+              <h6 class="card-title">The Growth of Gaming</h6>
+              <p class="card-text">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+$colors: (
+    //Primary
+    --Softorange: hsl(35, 77%, 62%),
+    --Softred: hsl(5, 85%, 63%),
+    //Neutral
+    --Off-white: hsl(36, 100%, 99%),
+    --Grayishblue: hsl(233, 8%, 79%),
+    --Darkgrayishblue: hsl(236, 13%, 42%),
+    --Verydarkblue: hsl(240, 100%, 5%)
+);
+
+@function color($color-name) {
+	@return map-get($colors, $color-name)
+}
+
+body{
+    background-color: color(--Off-white);
+    font-family: 'Inter', sans-serif;
+}
+
+p{ font-weight: 400; font-size: 15px;}
+
+.display-5{font-weight: 800; color: color(--Verydarkblue);}
+
+.btn{background-color: color(--Verydarkblue); color: color(--Off-white); border-radius: 0;}
+.btn:hover{background-color: color(--Softred); color: color(--Off-white);}
+
+.nav-link:hover{ color: color(--Softred); }
+
+.news-col{
+    background-color: color(--Verydarkblue);
+    hr{color: color(--Grayishblue);}
+    h3{
+        color: color(--Softorange);
+        font-weight: 800;
+    }
+    h5{
+        color: color(--Off-white);
+        font-weight: 700;
+    }
+    h5:hover{ color: color(--Softorange);}
+    p{ color: color(--Grayishblue); }
+}
+
+.card{ background-color: color(--Off-white);}
+
+.card-number{ font-weight: 700; color: color(--Grayishblue); font-size: 2rem;}
+
+.card-title{ font-weight: 800; color: color(--Verydarkblue);}
+.card-title:hover{color: color(--Softred);}
